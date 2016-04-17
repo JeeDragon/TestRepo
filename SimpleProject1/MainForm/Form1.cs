@@ -27,6 +27,7 @@ namespace MainForm
             if (textBox1.Text != "" || textBox1.Text != String.Empty)
             {
                 checkedListBox1.Items.Add(textBox1.Text);
+                treeView1.Nodes.Add(textBox1.Text);
                 textBox1.Clear();
                 checkedListBox1.Refresh();
             }
