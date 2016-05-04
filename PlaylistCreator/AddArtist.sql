@@ -1,0 +1,1 @@
+﻿INSERT INTO Artists VALUES('KIM', '456456c2')
