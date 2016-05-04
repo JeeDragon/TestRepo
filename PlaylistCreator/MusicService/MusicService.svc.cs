@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -12,22 +13,34 @@ namespace MusicService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class MusicService : IMusicService
     {
-        public string GetData(int value)
+        public Song AddArtist(string songKey, string artistKey)
         {
-            return string.Format("You entered: {0}", value);
+            throw new NotImplementedException();
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public Stream API()
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            throw new NotImplementedException();
+        }
+
+        public Artist CreateArtist(Artist artist)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Song CreateSong(Song song)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteSong(Song song)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Song GetSongInfo(string songKey, string brief)
+        {
+            throw new NotImplementedException();
         }
     }
 }
